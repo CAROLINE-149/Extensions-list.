@@ -6,226 +6,30 @@
     <title>Extensions List</title>
     <link rel="stylesheet" href="Extensions.css">
 </head>
-<body>
+<body class="dark-mode">
     <header>
-        <h5>Extensions</h5>
+        <div class="logo">
+            <h5>Extensions</h5>
+        </div>
+        
+        
+        <button class="theme-toggle">🌙</button>
+
     </header>
+
     <div class="header">
         <h3>Extensions List</h3>
-        <div class="buttons">
+        <div class="filters">
             <button id="all-button">All</button>
             <button id="active-button">Active</button>
             <button id="inactive-button">Inactive</button>
         </div>
     </div>
 
-    <div class="container">
-
-        <div class="card">
-            
-            <div class="card-top">
-                <img src="images/extension1.png" alt="Extension 1">
-                <h4>DevLens</h4>
-                <p>Quickly inspect page layouts and visualize element boundaries.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="card">
-            
-            <div class="card-top">
-                <img src="images/extension2.png" alt="Extension 2">
-            <h4>StyleSpy</h4>
-            <p>Instantly analyse and copy CSS from any webpage document.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension3.png" alt="Extension 3">
-                <h4>SpeedBoost</h4>
-                <p>Optimizes browser resource usage to accelerate page loading.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>JSONWizard</h4>
-                <p>Formats, validates and prettifies JSON responses in browser.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-        
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension5.png" alt="Extension 5">
-                <h4>TabMaster Pro</h4>
-                <p>Organizes browser tabs into groups and sessions.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div clas="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>ViewportBuddy</h4>
-                <p>Simulates various screen sizes directly within the browser.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>Markup Notes</h4>
-                <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>GridGuides</h4>
-                <p>Overlay customizable grids and alignment guides on any webpage.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>Palette Picker</h4>
-                <p>Instantly extracts color palettes from any webpage.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>LinkChecker</h4>
-                <p>Scans and highlights broken links on any page.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>DOM Snapshot</h4>
-                <p>Capture and export DOM structures quickly.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-        </div> 
-
-        <div class="card">
-            <div class="card-top">
-                <img src="images/extension4.png" alt="Extension 4">
-                <h4>ConsolePlus</h4>
-                <p>Enhanced developer console with advanced console with advanced filtering and logging.</p>
-            </div>
-
-            <div class="card-bottom">
-                <button>Remove</button>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-            </div>
-            
-        </div> 
+    <div class="extensions-grid">
 
     </div>
+
+    <script src="Extensions.js"></script>
 </body>
 </html>
