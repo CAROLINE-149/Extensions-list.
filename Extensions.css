@@ -2,8 +2,9 @@
     --background: linear-gradient(to bottom, #050b20,#09153e);
     --text-color: #ffffff;
     --card-background: #1f2535;
-    --button-background: #1f2535;
+    --button-background: #2f3549;
     --switch-background: #d36665;
+    --header-background: #1f2535;
 }
 
 body.light-mode{
@@ -12,6 +13,7 @@ body.light-mode{
     --card-background: #fbfdff;
     --button-background: #fbfdff;
     --switch-background: #d36665;
+    --header-background: #fbfdff;
 }
 
 body{
@@ -21,12 +23,54 @@ body{
     margin: 0;
     padding: 30px;
 }
+.extensions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: var(--header-background);
+    border-radius: 10px;
+    height: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+.logo h5{
+   font-size: 15px;
+   font-style: bold;
+}
+.theme-toggle{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-right: 10px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 .card{
     background: var(--card-background);
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 1px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -35,9 +79,13 @@ button{
     color: var(--text-color);
     border: none;
     padding: 8px 14px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
+
+}
+.remove{
+    border-color: #737a85;
 }
 
 .slider{
@@ -47,20 +95,26 @@ button{
     outline: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 .extensions-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .card-top{
     display: flex;
     gap: 15px;
 }
-
+.card-top img{
+    width: 80px;
+    height:50px;
+    margin-top: 25px;
+    
+}
 .extension-icon{
     width: 40px;
     height: 40px;
@@ -72,4 +126,15 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+p{
+    font-weight: lighter;
+    color: #737a85;
+    font-size: 14px;
+    margin-top: 5px;
+}
+h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
 }

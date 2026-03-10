@@ -11,7 +11,7 @@ const extensions = [
     {
         icon:"icons/styleSpy.svg",
         name: "StyleSpy",
-        escription: "Instantly analyse and copy CSS from any webpage document.",
+        description: "Instantly analyse and copy CSS from any webpage document.",
         active: true
     },
 
@@ -30,7 +30,7 @@ const extensions = [
     },
 
     {
-        icon: "iconsTabMasterPro.svg",
+        icon: "icons/TabMasterPro.svg",
         name: "TabMaster Pro",
         description: "Organizes browser tabs into groups and sessions.",
         active: true
@@ -177,9 +177,6 @@ themeButton.addEventListener("click", () => {
     themeButton.textContent = "🌙";
   }
 
-});
-
-
-
+}); 
 
 renderExtensions(extensions);
